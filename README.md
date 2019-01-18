@@ -1,25 +1,25 @@
-# REST API in PHP
+# REST API in PHP and mySQL
 
 ## How to:
 
 1. Run .sql script into mysql database to create and fill tables.
 2. Edit database.php with your database credencials.
-3. run php server
+3. run php server on cloned folder
   $ sudo php -S localhost:9000
 
 4. Using Postman:
 
 
 GET method:
-http://localhost:9000/PHP_REST_API/api/post/read_single.php?id=3
-http://localhost:9000/PHP_REST_API/api/post/read.php
+http://localhost:9000/api/post/read_single.php?id=3
+http://localhost:9000/api/post/read.php
 
 
 ### On Headers tab use: 'Content-Type' as key and value  'application/json' (without quotes)
 
 
 POST method:
-http://localhost:9000/PHP_REST_API/api/post/create.php
+http://localhost:9000/api/post/create.php
 
 e.g:
 {
@@ -30,7 +30,7 @@ e.g:
 
 
 PUT method:
-http://localhost:9000/PHP_REST_API/api/post/update.php
+http://localhost:9000/api/post/update.php
 
 e.g:
 {
@@ -41,7 +41,7 @@ e.g:
 }
 
 DELETE method:
-http://localhost:9000/PHP_REST_API/api/post/delete.php
+http://localhost:9000/api/post/delete.php
 
 e.g:
 {
